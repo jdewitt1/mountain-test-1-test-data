@@ -151,14 +151,14 @@
     },
     "content_for_index": [],
     "blocks": {
-      "9513407616245537438": {
-        "type": "shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2",
-        "disabled": false,
-        "settings": {}
-      },
       "15427022209551413807": {
         "type": "shopify://apps/b2b-wholesale-tools/blocks/app-embed/7141af57-1203-47fe-961b-6868ca88c0d9",
         "disabled": false,
+        "settings": {}
+      },
+      "9513407616245537438": {
+        "type": "shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2",
+        "disabled": true,
         "settings": {}
       }
     }
