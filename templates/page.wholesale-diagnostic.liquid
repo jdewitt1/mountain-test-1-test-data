@@ -1,0 +1,9 @@
+{% layout none %}
+{
+  "customer_tags": {{ customer.tags | json }},
+  "customer_logged_in": {{ customer != null }},
+  "product_metafields": {{ product.metafields | json }},
+  "cart_attributes": {{ cart.attributes | json }},
+  "app_embed_active": {{ content_for_header contains 'samita' }},
+  "theme_name": "{{ settings.theme_name | default: 'unknown' }}"
+}
