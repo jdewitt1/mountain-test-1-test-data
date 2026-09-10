@@ -1,9 +1,22 @@
 {% layout none %}
 {
   "customer_tags": {{ customer.tags | json }},
-  "customer_logged_in": {{ customer != null }},
+  "customer_logged_in": {{ customer }},
   "product_metafields": {{ product.metafields | json }},
   "cart_attributes": {{ cart.attributes | json }},
-  "app_embed_active": {{ content_for_header contains 'samita' }},
+  "app_embed_active": {{ content_for_header }},
   "theme_name": "{{ settings.theme_name | default: 'unknown' }}"
 }
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ customer != null }}"
+  to: "{{ customer }}"
+  position: 91..105
+- from: "{{ content_for_header contains 'samita' }}"
+  to: "{{ content_for_header }}"
+  position: 237..261
+{% endcomment %}
